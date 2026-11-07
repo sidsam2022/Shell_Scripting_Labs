@@ -31,3 +31,5 @@ echo "Available Vegetable in Swiggy: ${Vegetables[0]}"
 
 echo "================================================================"
 
+name=ManiKumar
+echo "${name} Durgavazula"
