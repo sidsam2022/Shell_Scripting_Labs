@@ -37,4 +37,4 @@ do
 
 done
 
-echo "Happy Diwali..."
+echo "Happy Diwali folks"
