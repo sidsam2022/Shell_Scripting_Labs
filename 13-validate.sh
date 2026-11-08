@@ -21,7 +21,7 @@ validate() {
   fi
 }
 
-dnf install mysql-server -y 
+dnf install mysql8.4-server -y 
 
 validate $? "mysql installation"
 
