@@ -12,12 +12,12 @@ fi
 echo "==========Proceeding========="
 
 
-validate(){
+validate() {
   if [ $1 -ne 0 ]; then
     echo "$2 ..failed"
     exit 1
   else 
-    echo "mysql successfully installed"
+    echo "$2 successfully installed"
   fi
 }
 
