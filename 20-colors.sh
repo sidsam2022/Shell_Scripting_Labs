@@ -47,4 +47,4 @@ dnf list installed ${package} &>>$log_files
 
 done
 
-echo "Happy Diwali folks $date"
+echo -e "${N}Happy Diwali folks $date"
