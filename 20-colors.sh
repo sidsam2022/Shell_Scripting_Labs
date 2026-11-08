@@ -1,7 +1,7 @@
 #!/bin/bash
 
 userid=$(id -u)
-date=$date
+D=$(date)
 
 log_folder="/var/log/install"
 log_files="${log_folder}/$0.log"
@@ -48,4 +48,4 @@ dnf list installed ${package} &>>$log_files
 
 done
 
-echo -e "${N}Happy Diwali folks $date"
+echo -e "${N}Happy Diwali folks $D"
