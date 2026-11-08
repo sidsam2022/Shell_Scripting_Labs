@@ -24,10 +24,10 @@ echo "==========Proceeding========="
 
 validate() {
   if [ $1 -ne 0 ]; then
-    echo "$2 ..${R}failed" | tee -a $log_files
+    echo -e "$2 ..${R}failed" | tee -a $log_files
     exit 1
   else 
-    echo "$2 ${G}successfully installed" | tee -a $log_files
+    echo -e "$2 ${G}successfully installed" | tee -a $log_files
   fi
 }
 
@@ -42,7 +42,7 @@ dnf list installed ${package} &>>$log_files
 	 dnf install ${package} -y >>$log_files
          validate $? "installing ${package}"
  else
-	 echo "${package} already installed..${Y}Skipping."
+	 echo -e "${package} already installed..${Y}Skipping."
  fi
 
 done
