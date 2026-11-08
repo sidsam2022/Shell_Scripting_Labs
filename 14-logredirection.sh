@@ -19,10 +19,10 @@ echo "==========Proceeding========="
 
 validate() {
   if [ $1 -ne 0 ]; then
-    echo "$2 ..failed"
+    echo "$2 ..failed" | tee -a $log_files
     exit 1
   else 
-    echo "$2 successfully installed"
+    echo "$2 successfully installed" | tee -a $log_files
   fi
 }
 
