@@ -30,16 +30,21 @@ for package in $@
 
 do
 
- echo "going to install: ${package}"
- dnf install mysql8.4-server -y &>>$log_files
+dnf list installed ${package}
+
  if [ $? -ne 0 ]; then
 	 echo "${package} going to install"
  else
-	 echo "${package} already installed"
+	 echo "${package} already installed..Skipping."
  fi
+
+ dnf install ${package} -y &>>$log_files
 
  validate $? "installing ${package}"
 
 done
 
 echo "Happy Diwali folks"
+
+
+
