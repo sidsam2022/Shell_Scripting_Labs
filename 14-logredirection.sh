@@ -3,7 +3,7 @@
 userid=$(id -u)
 
 log_folder="/var/log/install"
-log_files="${log_folder}/{$0}.log"
+log_files="${log_folder}/$0.log"
 
 mkdir -p $log_folder
 
