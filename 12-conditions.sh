@@ -20,6 +20,3 @@ else
 	echo "nginx successfully installed"
 
 fi
-
-
-
