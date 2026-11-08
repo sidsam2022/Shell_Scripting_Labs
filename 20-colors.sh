@@ -1,6 +1,7 @@
 #!/bin/bash
 
 userid=$(id -u)
+date=$date
 
 log_folder="/var/log/install"
 log_files="${log_folder}/$0.log"
