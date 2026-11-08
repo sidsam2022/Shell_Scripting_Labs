@@ -17,12 +17,12 @@ validate(){
     echo "$2 ..failed"
     exit 1
   else 
-    echo "nginx successfully installed"
+    echo "mysql successfully installed"
   fi
 }
 
-dnf install nginx -y 
+dnf install mysql -y 
 
-validate $? "nginx installation"
+validate $? "mysql installation"
 
 echo "Happy Diwali..."
