@@ -13,7 +13,7 @@ echo "==========Proceeding========="
 
 dnf install nginxxx -y
 
-if [ $? -ne 0]; then
+if [ $? -ne 0 ]; then
 	echo "nginx installtion failed"
 	exit 1
 else 
