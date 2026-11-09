@@ -15,6 +15,7 @@ N="\e[0m"
 mkdir -p $log_folder
 
 trap 'echo "Error at $LINENO", command: "$BASH_COMMAND"' ERR
+trap 'echo "You pressed Ctrl+C"; exit' SIGINT
 
 if [ $userid -ne 0 ]; then
 	echo "Please run this script with elevated privileges"
